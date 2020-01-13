@@ -1,0 +1,1149 @@
+
+#######################
+##MODEL TREE COGNITIVO#
+#######################
+
+572 samples
+  3 predictor
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 514, 516, 516, 515, 514, 515, ... 
+Resampling results across tuning parameters:
+
+  pruned  smoothed  rules  RMSE       Rsquared   MAE      
+  Yes     Yes       Yes    35.655428  0.3248384  26.835134
+  Yes     Yes       No     35.343685  0.2848071  27.829482
+  Yes     No        Yes     6.798659  0.9184475   5.198090
+  Yes     No        No      6.928084  0.9152313   5.281365
+  No      Yes       Yes    44.749546  0.1191938  29.534712
+  No      Yes       No     36.660365  0.2218008  28.341469
+  No      No        Yes     8.092347  0.8853199   6.228474
+  No      No        No      8.551811  0.8780090   6.609293
+
+RMSE was used to select the optimal model using the smallest value.
+The final values used for the model were pruned = Yes, smoothed = No and rules = Yes.
+M5 pruned model rules :
+Number of Rules : 14
+
+Rule: 1
+IF
+	childAge > 22.012
+	childAge > 49.955
+	childAge <= 60.255
+THEN
+
+.outcome = 
+	+ 130.9213 [62/26.345%]
+
+Rule: 2
+IF
+	childAge > 19.203
+	childAge > 54.965
+	A_Index > -0.68
+THEN
+
+.outcome = 
+	+ 136.5456 [59/28.81%]
+
+Rule: 3
+IF
+	childAge > 14.932
+	childAge > 33.758
+	childAge <= 48.542
+	childAge > 39.228
+	A_Index <= -0.145
+THEN
+
+.outcome = 
+	0.5817 * childAge 
+	+ 97.146 [46/31.77%]
+
+Rule: 4
+IF
+	childAge > 12.83
+	childAge > 22.308
+	childAge <= 41.15
+	childAge <= 31.589
+	A_Index > -0.756
+	childAge <= 29.158
+THEN
+
+.outcome = 
+	+ 107.97 [51/29.144%]
+
+Rule: 5
+IF
+	childAge <= 12.83
+	childAge <= 7.097
+THEN
+
+.outcome = 
+	3.0767 * childAge 
+	+ 43.9702 [43/28.759%]
+
+Rule: 6
+IF
+	childAge <= 19.203
+	childAge <= 12.665
+	childAge <= 9.166
+THEN
+
+.outcome = 
+	+ 72.868 [35/26.614%]
+
+Rule: 7
+IF
+	childAge <= 23.54
+	childAge <= 13.815
+	childAge <= 12.665
+THEN
+
+.outcome = 
+	+ 80.5447 [34/61.898%]
+
+Rule: 8
+IF
+	childAge <= 23.54
+	childAge <= 18.497
+	childAge > 14.932
+THEN
+
+.outcome = 
+	+ 96.8194 [34/28.775%]
+
+Rule: 9
+IF
+	childAge <= 24.542
+	childAge > 16.723
+	childAge <= 21.897
+THEN
+
+.outcome = 
+	+ 105.5447 [31/46.403%]
+
+Rule: 10
+IF
+	childAge > 23.54
+	childAge <= 47.721
+	childAge <= 36.567
+	childAge <= 31.589
+THEN
+
+.outcome = 
+	+ 110.6506 [31/19.752%]
+
+Rule: 11
+IF
+	childAge > 22.012
+	childAge <= 48.805
+	childAge <= 36.567
+	childAge > 31.754
+THEN
+
+.outcome = 
+	+ 113.1823 [30/27.542%]
+
+Rule: 12
+IF
+	childAge <= 27.515
+THEN
+
+.outcome = 
+	1.4597 * childAge 
+	+ 71.5046 [37/21.916%]
+
+Rule: 13
+IF
+	childAge <= 54.998
+	A_Index > -0.439
+	childAge > 38.653
+	A_Index <= 0.77
+THEN
+
+.outcome = 
+	+ 119.9073 [26/43.603%]
+
+Rule: 14
+
+.outcome = 
+	-1.4746 * A_Index 
+	+ 0.8327 * childAge 
+	+ 85.1859 [53/46.029%]
+
+MODEL TREE SOCIOEMOCIONAL
+
+569 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 512, 512, 512, 513, 512, 512, ... 
+Resampling results across tuning parameters:
+
+  pruned  smoothed  rules  RMSE       Rsquared    MAE      
+  Yes     Yes       Yes    15.843558  0.63527399  12.154618
+  Yes     Yes       No     18.273483  0.47431710  14.584605
+  Yes     No        Yes     5.838964  0.87147166   4.537891
+  Yes     No        No      5.863054  0.87110855   4.581779
+  No      Yes       Yes    39.866858  0.07529883  25.903612
+  No      Yes       No     27.558900  0.16818569  19.060170
+  No      No        Yes     7.144411  0.81209090   5.492018
+  No      No        No      7.067353  0.81680696   5.443564
+
+RMSE was used to select the optimal model using the smallest value.
+The final values used for the model were pruned = Yes, smoothed = No and rules = Yes.
+M5 pruned model rules :
+Number of Rules : 13
+
+Rule: 1
+IF
+	childAge > 14.932
+	childAge > 30.768
+	childAge <= 53.749
+	childAge > 38.012
+THEN
+
+.outcome = 
+	+ 124.3918 [117/35.373%]
+
+Rule: 2
+IF
+	childAge <= 14.932
+	childAge <= 11.269
+	childAge > 6.669
+THEN
+
+.outcome = 
+	+ 88.3448 [62/38.604%]
+
+Rule: 3
+IF
+	childAge > 18.497
+	childAge > 34.497
+	childAge > 60.32
+	A_Index <= 0.828
+THEN
+
+.outcome = 
+	+ 129.8031 [58/44.335%]
+
+Rule: 4
+IF
+	childAge > 14.932
+	childAge <= 23.639
+	childAge > 18.497
+THEN
+
+.outcome = 
+	+ 112.5794 [49/31.305%]
+
+Rule: 5
+IF
+	childAge > 21.043
+	childAge <= 45.996
+	childAge <= 33.265
+	childAge <= 29.996
+	A_Index > -0.676
+THEN
+
+.outcome = 
+	+ 116.5789 [45/29.902%]
+
+Rule: 6
+IF
+	childAge > 21.043
+	childAge <= 45.996
+	childAge <= 33.265
+THEN
+
+.outcome = 
+	+ 119.9122 [41/19.252%]
+
+Rule: 7
+IF
+	childAge <= 25.889
+	childAge <= 9.002
+THEN
+
+.outcome = 
+	+ 80.4759 [37/27.881%]
+
+Rule: 8
+IF
+	childAge <= 25.889
+	childAge > 14.784
+THEN
+
+.outcome = 
+	+ 107.7139 [36/32.98%]
+
+Rule: 9
+IF
+	childAge > 24.049
+	childAge > 45.996
+	childAge > 57.363
+THEN
+
+.outcome = 
+	+ 125.3936 [36/27.327%]
+
+Rule: 10
+IF
+	childAge > 24.049
+	childAge <= 45.996
+THEN
+
+.outcome = 
+	+ 121.9283 [29/15.315%]
+
+Rule: 11
+IF
+	childAge <= 34.415
+	childAge > 12.731
+THEN
+
+.outcome = 
+	+ 100.922 [25/37.149%]
+
+Rule: 12
+IF
+	childAge > 33.38
+THEN
+
+.outcome = 
+	+ 128.6276 [21/34.696%]
+
+Rule: 13
+
+.outcome = 
+	+ 94.5285 [13/100%]
+
+
+MODEL TREE COMUNICAÇÃO E LINGUAGEM EXPRESSIVA
+
+567 samples
+  3 predictor
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 512, 511, 509, 511, 510, 511, ... 
+Resampling results across tuning parameters:
+
+  pruned  smoothed  rules  RMSE      Rsquared   MAE     
+  Yes     Yes       Yes    33.96489  0.6048892  26.27495
+  Yes     Yes       No     41.34883  0.5755691  33.88634
+  Yes     No        Yes    14.42755  0.8754460  11.35547
+  Yes     No        No     14.37526  0.8761973  11.33373
+  No      Yes       Yes    43.09722  0.4577513  32.65166
+  No      Yes       No     44.51240  0.4351627  34.40444
+  No      No        Yes    18.27537  0.8104941  14.17563
+  No      No        No     18.11545  0.8112013  14.20617
+
+RMSE was used to select the optimal model using the smallest value.
+The final values used for the model were pruned = Yes, smoothed = No and rules = No.
+M5 pruned model tree:
+
+childAge <= 23.704 : 
+|   childAge <= 10.513 : 
+|   |   childAge <= 6.834 : LM1 (38/43.29%)
+|   |   childAge >  6.834 : LM2 (52/44.819%)
+|   childAge >  10.513 : 
+|   |   childAge <= 19.105 : 
+|   |   |   childAge <= 12.928 : LM3 (22/38.976%)
+|   |   |   childAge >  12.928 : LM4 (64/30.31%)
+|   |   childAge >  19.105 : 
+|   |   |   childSex21 <= 1.5 : LM5 (25/30.014%)
+|   |   |   childSex21 >  1.5 : LM6 (19/25.746%)
+childAge >  23.704 : 
+|   childAge <= 38.538 : 
+|   |   childAge <= 30.768 : LM7 (66/39.386%)
+|   |   childAge >  30.768 : 
+|   |   |   childSex21 <= 1.5 : LM8 (20/25.416%)
+|   |   |   childSex21 >  1.5 : LM9 (33/33.927%)
+|   childAge >  38.538 : 
+|   |   childAge <= 51.253 : 
+|   |   |   A_Index <= -0.49 : LM10 (42/28.463%)
+|   |   |   A_Index >  -0.49 : LM11 (58/33.671%)
+|   |   childAge >  51.253 : 
+|   |   |   A_Index <= -0.683 : LM12 (29/22.185%)
+|   |   |   A_Index >  -0.683 : LM13 (99/23.833%)
+
+LM num: 1
+.outcome = 
+	+ 24.4779
+
+LM num: 2
+.outcome = 
+	+ 53.6919
+
+LM num: 3
+.outcome = 
+	+ 81.2341
+
+LM num: 4
+.outcome = 
+	+ 83.6634
+
+LM num: 5
+.outcome = 
+	+ 105.0644
+
+LM num: 6
+.outcome = 
+	+ 96.2526
+
+LM num: 7
+.outcome = 
+	+ 117.3426
+
+LM num: 8
+.outcome = 
+	+ 135.952
+
+LM num: 9
+.outcome = 
+	+ 125.5836
+
+LM num: 10
+.outcome = 
+	+ 144.3457
+
+LM num: 11
+.outcome = 
+	+ 138.496
+
+LM num: 12
+.outcome = 
+	+ 159.573
+
+LM num: 13
+.outcome = 
+	+ 145.0078
+
+Number of Rules : 13
+
+MODEL TREE COMUNICAÇÃO E LINGUAGEM RECEPTIVA
+
+568 samples
+  3 predictor
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 511, 510, 511, 511, 512, 512, ... 
+Resampling results across tuning parameters:
+
+  pruned  smoothed  rules  RMSE       Rsquared   MAE      
+  Yes     Yes       Yes    12.955276  0.8139834  10.798028
+  Yes     Yes       No     13.840443  0.8546119  11.861028
+  Yes     No        Yes     8.007641  0.8917886   6.048646
+  Yes     No        No      7.968781  0.8933981   6.012034
+  No      Yes       Yes    20.120231  0.6090618  15.055169
+  No      Yes       No     15.070891  0.8081520  12.733860
+  No      No        Yes     9.706634  0.8476942   7.314855
+  No      No        No      9.588595  0.8441316   7.360097
+
+RMSE was used to select the optimal model using the smallest value.
+The final values used for the model were pruned = Yes, smoothed = No and rules = No.
+M5 pruned model tree:
+
+childAge <= 18.71 : 
+|   childAge <= 11.877 : 
+|   |   childAge <= 7.211 : LM1 (44/41.383%)
+|   |   childAge >  7.211 : LM2 (59/57.711%)
+|   childAge >  11.877 : 
+|   |   childAge <= 14.784 : LM3 (31/28.251%)
+|   |   childAge >  14.784 : 
+|   |   |   A_Index <= 0.351 : LM4 (31/24.669%)
+|   |   |   A_Index >  0.351 : LM5 (9/10.553%)
+childAge >  18.71 : 
+|   childAge <= 38.538 : 
+|   |   childAge <= 23.639 : LM6 (45/23.336%)
+|   |   childAge >  23.639 : 
+|   |   |   childAge <= 33.758 : LM7 (89/24.443%)
+|   |   |   childAge >  33.758 : 
+|   |   |   |   childAge <= 34.94 : LM8 (8/3.772%)
+|   |   |   |   childAge >  34.94 : 
+|   |   |   |   |   childSex21 <= 1.5 : LM9 (12/26.707%)
+|   |   |   |   |   childSex21 >  1.5 : LM10 (11/31.397%)
+|   childAge >  38.538 : 
+|   |   childAge <= 51.253 : LM11 (100/26.918%)
+|   |   childAge >  51.253 : 
+|   |   |   childAge <= 60.107 : LM12 (52/20.204%)
+|   |   |   childAge >  60.107 : 
+|   |   |   |   A_Index <= -0.446 : LM13 (23/14.583%)
+|   |   |   |   A_Index >  -0.446 : 
+|   |   |   |   |   childSex21 <= 1.5 : LM14 (22/13.731%)
+|   |   |   |   |   childSex21 >  1.5 : LM15 (32/14.223%)
+
+LM num: 1
+.outcome = 
+	+ 62.3141
+
+LM num: 2
+.outcome = 
+	+ 75.0214
+
+LM num: 3
+.outcome = 
+	+ 94.1384
+
+LM num: 4
+.outcome = 
+	+ 102.8926
+
+LM num: 5
+.outcome = 
+	-1.7277 * childAge 
+	+ 136.5517
+
+LM num: 6
+.outcome = 
+	+ 110.1569
+
+LM num: 7
+.outcome = 
+	+ 117.5451
+
+LM num: 8
+.outcome = 
+	-1.1924 * A_Index 
+	+ 4.6704 * childSex21 
+	+ 116.059
+
+LM num: 9
+.outcome = 
+	+ 128.5825
+
+LM num: 10
+.outcome = 
+	+ 119.7318
+
+LM num: 11
+.outcome = 
+	+ 129.6445
+
+LM num: 12
+.outcome = 
+	+ 133.1394
+
+LM num: 13
+.outcome = 
+	+ 135.8709
+
+LM num: 14
+.outcome = 
+	+ 134.7941
+
+LM num: 15
+.outcome = 
+	+ 132.5322
+
+Number of Rules : 15
+
+MODEL TREE MOTRICIDADE AMPLA
+
+570 samples
+  3 predictor
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 514, 513, 511, 512, 514, 514, ... 
+Resampling results across tuning parameters:
+
+  pruned  smoothed  rules  RMSE       Rsquared   MAE      
+  Yes     Yes       Yes    23.526037  0.5789066  17.581782
+  Yes     Yes       No     28.469394  0.5751415  21.140199
+  Yes     No        Yes     6.651579  0.9310048   5.168601
+  Yes     No        No      6.628008  0.9311656   5.144873
+  No      Yes       Yes    33.316730  0.3122980  23.610360
+  No      Yes       No     30.985855  0.4740444  22.864986
+  No      No        Yes     8.246801  0.8981966   6.259845
+  No      No        No      8.307688  0.8959844   6.268689
+
+RMSE was used to select the optimal model using the smallest value.
+The final values used for the model were pruned = Yes, smoothed = No and rules = No.
+M5 pruned model tree:
+
+childAge <= 15.688 : 
+|   childAge <= 8.46 : 
+|   |   childAge <= 6.768 : LM1 (39/20.093%)
+|   |   childAge >  6.768 : LM2 (32/29.638%)
+|   childAge >  8.46 : 
+|   |   childAge <= 12.731 : 
+|   |   |   A_Index <= 0.431 : LM3 (31/37.071%)
+|   |   |   A_Index >  0.431 : 
+|   |   |   |   childAge <= 9.084 : LM4 (3/0.093%)
+|   |   |   |   childAge >  9.084 : 
+|   |   |   |   |   childSex21 <= 1.5 : LM5 (6/7.093%)
+|   |   |   |   |   childSex21 >  1.5 : LM6 (2/2.428%)
+|   |   childAge >  12.731 : 
+|   |   |   childAge <= 14.85 : LM7 (26/20.308%)
+|   |   |   childAge >  14.85 : 
+|   |   |   |   A_Index <= 0.298 : LM8 (6/7.775%)
+|   |   |   |   A_Index >  0.298 : LM9 (3/5.339%)
+childAge >  15.688 : 
+|   childAge <= 33.758 : 
+|   |   childAge <= 22.012 : 
+|   |   |   childAge <= 19.269 : 
+|   |   |   |   A_Index <= -0.204 : LM10 (11/18.173%)
+|   |   |   |   A_Index >  -0.204 : LM11 (24/7.397%)
+|   |   |   childAge >  19.269 : LM12 (25/5.755%)
+|   |   childAge >  22.012 : 
+|   |   |   childAge <= 28.452 : 
+|   |   |   |   childAge <= 24.493 : LM13 (22/17.14%)
+|   |   |   |   childAge >  24.493 : LM14 (40/26.819%)
+|   |   |   childAge >  28.452 : LM15 (41/26.776%)
+|   childAge >  33.758 : 
+|   |   childAge <= 49.955 : 
+|   |   |   childAge <= 40.493 : LM16 (43/23.484%)
+|   |   |   childAge >  40.493 : LM17 (79/21.743%)
+|   |   childAge >  49.955 : 
+|   |   |   childAge <= 60.107 : 
+|   |   |   |   childSex21 <= 1.5 : LM18 (31/20.466%)
+|   |   |   |   childSex21 >  1.5 : LM19 (30/29.001%)
+|   |   |   childAge >  60.107 : 
+|   |   |   |   A_Index <= -0.49 : 
+|   |   |   |   |   childAge <= 63.836 : LM20 (7/4.007%)
+|   |   |   |   |   childAge >  63.836 : 
+|   |   |   |   |   |   childAge <= 68.83 : 
+|   |   |   |   |   |   |   childAge <= 65.462 : LM21 (4/8.307%)
+|   |   |   |   |   |   |   childAge >  65.462 : LM22 (4/5.725%)
+|   |   |   |   |   |   childAge >  68.83 : LM23 (5/6.869%)
+|   |   |   |   A_Index >  -0.49 : 
+|   |   |   |   |   childAge <= 66.793 : 
+|   |   |   |   |   |   childSex21 <= 1.5 : LM24 (13/23.265%)
+|   |   |   |   |   |   childSex21 >  1.5 : LM25 (25/21.963%)
+|   |   |   |   |   childAge >  66.793 : LM26 (18/25.084%)
+
+LM num: 1
+.outcome = 
+	+ 68.9805
+
+LM num: 2
+.outcome = 
+	+ 81.3219
+
+LM num: 3
+.outcome = 
+	+ 93.3323
+
+LM num: 4
+.outcome = 
+	+ 91.1733
+
+LM num: 5
+.outcome = 
+	2.1383 * childAge 
+	+ 75.3857
+
+LM num: 6
+.outcome = 
+	+ 91.755
+
+LM num: 7
+.outcome = 
+	+ 106.4631
+
+LM num: 8
+.outcome = 
+	-12.2637 * childAge 
+	+ 10.8738 * childSex21 
+	+ 285.2131
+
+LM num: 9
+.outcome = 
+	+ 119.0933
+
+LM num: 10
+.outcome = 
+	+ 117.9355
+
+LM num: 11
+.outcome = 
+	-0.5234 * childAge 
+	+ 129.7779
+
+LM num: 12
+.outcome = 
+	+ 121.5872
+
+LM num: 13
+.outcome = 
+	+ 125.7214
+
+LM num: 14
+.outcome = 
+	+ 125.5817
+
+LM num: 15
+.outcome = 
+	+ 133.5178
+
+LM num: 16
+.outcome = 
+	+ 137.456
+
+LM num: 17
+.outcome = 
+	+ 141.0056
+
+LM num: 18
+.outcome = 
+	+ 145.0268
+
+LM num: 19
+.outcome = 
+	+ 148.247
+
+LM num: 20
+.outcome = 
+	+ 160.2457
+
+LM num: 21
+.outcome = 
+	+ 148.6775
+
+LM num: 22
+.outcome = 
+	+ 159.21
+
+LM num: 23
+.outcome = 
+	+ 149.588
+
+LM num: 24
+.outcome = 
+	+ 151.4077
+
+LM num: 25
+.outcome = 
+	+ 145.5236
+
+LM num: 26
+.outcome = 
+	+ 152.3572
+
+Number of Rules : 26
+
+
+MODEL TREE MOTRICIDADE FINA
+
+568 samples
+  3 predictor
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 511, 511, 512, 510, 510, 512, ... 
+Resampling results across tuning parameters:
+
+  pruned  smoothed  rules  RMSE       Rsquared   MAE      
+  Yes     Yes       Yes    23.269330  0.6200228  19.439788
+  Yes     Yes       No     22.384633  0.6994410  19.241061
+  Yes     No        Yes     6.544012  0.9161992   5.112462
+  Yes     No        No      6.671051  0.9119210   5.253389
+  No      Yes       Yes    27.528811  0.4012780  21.366362
+  No      Yes       No     23.218186  0.6683362  19.840769
+  No      No        Yes     8.346365  0.8660441   6.427462
+  No      No        No      8.040754  0.8777647   6.333221
+
+RMSE was used to select the optimal model using the smallest value.
+The final values used for the model were pruned = Yes, smoothed = No and rules = Yes.
+M5 pruned model rules :
+Number of Rules : 15
+
+Rule: 1
+IF
+	childAge > 29.06
+	childAge <= 49.955
+	childAge > 39.047
+	childAge <= 44.83
+THEN
+
+.outcome = 
+	+ 130.7761 [51/19.373%]
+
+Rule: 2
+IF
+	childAge <= 22.177
+	childAge > 12.731
+	childAge > 14.784
+THEN
+
+.outcome = 
+	+ 107.6381 [72/29.865%]
+
+Rule: 3
+IF
+	childAge > 18.513
+	childAge <= 41.922
+	childAge <= 29.06
+	A_Index > -0.43
+THEN
+
+.outcome = 
+	+ 114.5658 [45/33.327%]
+
+Rule: 4
+IF
+	childAge > 18.513
+	childAge <= 41.922
+	childAge <= 34.086
+THEN
+
+.outcome = 
+	+ 121.3457 [58/22.189%]
+
+Rule: 5
+IF
+	childAge <= 24.509
+	childAge > 6.949
+	childAge <= 12.731
+	childAge > 8.329
+THEN
+
+.outcome = 
+	+ 90.7602 [44/28.475%]
+
+Rule: 6
+IF
+	childAge > 24.509
+	childAge > 49.955
+	childAge <= 63.162
+	childSex21 > 1.5
+THEN
+
+.outcome = 
+	+ 136.765 [40/15.129%]
+
+Rule: 7
+IF
+	childAge > 24.509
+	childAge > 50.152
+	childAge > 60.09
+	A_Index <= 0.471
+	A_Index <= 0.033
+THEN
+
+.outcome = 
+	+ 143.1842 [33/17.13%]
+
+Rule: 8
+IF
+	childAge > 24.509
+	childAge > 50.152
+	childAge > 56.099
+THEN
+
+.outcome = 
+	+ 142.0519 [48/13.993%]
+
+Rule: 9
+IF
+	childAge > 24.509
+	childAge > 41.922
+	childSex21 <= 1.5
+THEN
+
+.outcome = 
+	+ 137.4041 [34/21.755%]
+
+Rule: 10
+IF
+	childAge <= 24.509
+	childAge <= 10.53
+	childAge > 6.768
+THEN
+
+.outcome = 
+	+ 83.6993 [29/24.624%]
+
+Rule: 11
+IF
+	childAge <= 24.509
+	childAge > 9.758
+THEN
+
+.outcome = 
+	+ 99.3392 [25/16.17%]
+
+Rule: 12
+IF
+	childAge > 20.501
+	childAge <= 46.982
+	childSex21 > 1.5
+THEN
+
+.outcome = 
+	-2.3686 * A_Index 
+	+ 124.4883 [23/13.489%]
+
+Rule: 13
+IF
+	childAge > 20.501
+THEN
+
+.outcome = 
+	0.2687 * childAge 
+	+ 118.9998 [28/17.209%]
+
+Rule: 14
+IF
+	childAge > 4.517
+	childAge > 5.487
+THEN
+
+.outcome = 
+	+ 72.938 [15/80.07%]
+
+Rule: 15
+
+.outcome = 
+	+ 66.647 [23/100%]
+
+
+MODEL TREE COMPORTAMENTO ADAPTATIVO
+
+526 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 472, 473, 473, 474, 475, 473, ... 
+Resampling results across tuning parameters:
+
+  pruned  smoothed  rules  RMSE       Rsquared   MAE      
+  Yes     Yes       Yes    21.806789  0.4731004  10.518988
+  Yes     Yes       No      9.749679  0.6633154   7.730703
+  Yes     No        Yes     3.786995  0.8950486   2.905314
+  Yes     No        No      3.734204  0.8981810   2.877110
+  No      Yes       Yes    21.654756  0.2032977  14.645304
+  No      Yes       No     13.285018  0.4564332   9.955777
+  No      No        Yes     4.636223  0.8438170   3.586163
+  No      No        No      4.714850  0.8424488   3.615148
+
+RMSE was used to select the optimal model using the smallest value.
+The final values used for the model were pruned = Yes, smoothed = No and rules = No.
+M5 pruned model tree:
+
+childAge <= 23.639 : 
+|   childAge <= 14.604 : 
+|   |   childAge <= 11.45 : 
+|   |   |   childAge <= 8.329 : 
+|   |   |   |   A_Index <= -0.325 : LM1 (9/21.742%)
+|   |   |   |   A_Index >  -0.325 : LM2 (16/27.378%)
+|   |   |   childAge >  8.329 : LM3 (31/26.703%)
+|   |   childAge >  11.45 : LM4 (33/28.647%)
+|   childAge >  14.604 : 
+|   |   childAge <= 18.497 : 
+|   |   |   A_Index <= -0.094 : LM5 (19/29.576%)
+|   |   |   A_Index >  -0.094 : LM6 (20/15.582%)
+|   |   childAge >  18.497 : LM7 (49/35.268%)
+childAge >  23.639 : 
+|   childAge <= 47.524 : 
+|   |   childAge <= 34.086 : 
+|   |   |   childAge <= 28.14 : LM8 (45/22.888%)
+|   |   |   childAge >  28.14 : LM9 (46/28.445%)
+|   |   childAge >  34.086 : 
+|   |   |   childAge <= 40.181 : LM10 (38/25.323%)
+|   |   |   childAge >  40.181 : LM11 (65/32.419%)
+|   childAge >  47.524 : 
+|   |   childAge <= 53.749 : LM12 (38/34.794%)
+|   |   childAge >  53.749 : 
+|   |   |   A_Index <= 0.466 : 
+|   |   |   |   A_Index <= 0.064 : LM13 (66/26.736%)
+|   |   |   |   A_Index >  0.064 : 
+|   |   |   |   |   A_Index <= 0.337 : 
+|   |   |   |   |   |   A_Index <= 0.252 : LM14 (9/23.956%)
+|   |   |   |   |   |   A_Index >  0.252 : LM15 (3/28.984%)
+|   |   |   |   |   A_Index >  0.337 : LM16 (5/8.743%)
+|   |   |   A_Index >  0.466 : LM17 (34/31.797%)
+
+LM num: 1
+.outcome = 
+	+ 75.3689
+
+LM num: 2
+.outcome = 
+	+ 78.7719
+
+LM num: 3
+.outcome = 
+	+ 80.3216
+
+LM num: 4
+.outcome = 
+	+ 85.1545
+
+LM num: 5
+.outcome = 
+	+ 89.2095
+
+LM num: 6
+.outcome = 
+	+ 92.1345
+
+LM num: 7
+.outcome = 
+	+ 96.0041
+
+LM num: 8
+.outcome = 
+	+ 101.7822
+
+LM num: 9
+.outcome = 
+	+ 103.4687
+
+LM num: 10
+.outcome = 
+	+ 105.7658
+
+LM num: 11
+.outcome = 
+	+ 107.232
+
+LM num: 12
+.outcome = 
+	+ 109.6453
+
+LM num: 13
+.outcome = 
+	+ 113.0891
+
+LM num: 14
+.outcome = 
+	+ 115.1244
+
+LM num: 15
+.outcome = 
+	+ 119.1233
+
+LM num: 16
+.outcome = 
+	+ 113.346
+
+LM num: 17
+.outcome = 
+	+ 111.7606
+
+Number of Rules : 17
+##########
+## MARS ##
+##########
+
+
+MARS COGNITIVO
+Call: earth(formula=Rasch_COG_Dev~A_Index+childAge+childSex21, data=train[complete.cases(train[,c("Rasch_COG_Dev","A_I...))
+
+                       coefficients
+(Intercept)               98.518163
+h(-0.00614174-A_Index)     2.331560
+h(16.0986-childAge)       -3.505326
+h(childAge-16.0986)        0.792225
+h(childAge-69.6509)       -3.686945
+
+Selected 5 of 6 terms, and 2 of 2 predictors
+Termination condition: RSq changed by less than 0.001 at 6 terms
+Importance: childAge, A_Index
+Number of terms at each degree of interaction: 1 4 (additive model)
+GCV 39.44284    RSS 20831.67    GRSq 0.9304894    RSq 0.9325151
+
+
+MARS SOCIOEMOCIONAL
+Call: earth(formula=RaschSE_Dev~A_Index+childAge+childSex21, data=train[complete.cases(train[,c("RaschSE_Dev","A_Ind...))
+
+                     coefficients
+(Intercept)            114.643040
+h(-0.351483-A_Index)     2.633831
+h(21.0267-childAge)     -2.139698
+h(childAge-21.0267)      0.438276
+h(childAge-39.655)      -0.215906
+h(childAge-68.4682)     -1.523889
+
+Selected 6 of 7 terms, and 2 of 2 predictors
+Termination condition: RSq changed by less than 0.001 at 7 terms
+Importance: childAge, A_Index
+Number of terms at each degree of interaction: 1 5 (additive model)
+GCV 31.45931    RSS 17214.93    GRSq 0.880011    RSq 0.8841987
+
+MARS COMUNICAÇÃO E LINGUAGEM EXPRESSIVA
+Call: earth(formula=RaschCLE_Dev~A_Index+childAge+childSex21, data=train[complete.cases(train[,c("RaschCLE_Dev","A_In...))
+
+                    coefficients
+(Intercept)           131.208370
+childSex21             -3.944168
+h(28.1232-childAge)    -3.817697
+h(childAge-28.1232)     1.009316
+h(childAge-45.4374)    -0.783000
+
+Selected 5 of 5 terms, and 2 of 3 predictors
+Termination condition: RSq changed by less than 0.001 at 5 terms
+Importance: childAge, childSex21, A_Index-unused
+Number of terms at each degree of interaction: 1 4 (additive model)
+GCV 214.6293    RSS 117862.1    GRSq 0.8685395    RSq 0.8722294
+
+
+MARS COMUNICAÇÃO E LINGUAGEM RECEPTIVA
+Call: earth(formula=RaschCLR_Dev~A_Index+childAge+childSex21, data=train[complete.cases(train[,c("RaschCLR_Dev","A_In...))
+
+                     coefficients
+(Intercept)            112.145163
+h(-0.344048-A_Index)     2.671071
+h(20.4682-childAge)     -3.220875
+h(childAge-20.4682)      0.763313
+h(childAge-41.5277)     -0.534520
+
+Selected 5 of 6 terms, and 2 of 3 predictors
+Termination condition: RSq changed by less than 0.001 at 6 terms
+Importance: childAge, A_Index, childSex21-unused
+Number of terms at each degree of interaction: 1 4 (additive model)
+GCV 64.29129    RSS 35369.38    GRSq 0.8907296    RSq 0.8937913
+
+MARS MOTRICIDADE AMPLA
+Call: earth(formula=Rasch_MA_Dev~A_Index+childAge+childSex21, data=train[complete.cases(train[,c("Rasch_MA_Dev","A_In...))
+
+                    coefficients
+(Intercept)           122.115832
+h(17.9713-childAge)    -4.005676
+h(childAge-17.9713)     0.855200
+h(childAge-35.154)     -0.402014
+
+Selected 4 of 4 terms, and 1 of 3 predictors
+Termination condition: RSq changed by less than 0.001 at 4 terms
+Importance: childAge, A_Index-unused, childSex21-unused
+Number of terms at each degree of interaction: 1 3 (additive model)
+GCV 41.58802    RSS 23126.51    GRSq 0.9353984    RSq 0.9367536
+
+MARS MOTRICIDADE FINA
+Call: earth(formula=Rasch_MF_Dev~A_Index+childAge+childSex21, data=train[complete.cases(train[,c("Rasch_MF_Dev","A_In...))
+
+                     coefficients
+(Intercept)            108.741919
+childSex21              -1.512322
+h(-0.117403-A_Index)     2.020280
+h(16.0986-childAge)     -3.169329
+h(childAge-16.0986)      0.931827
+h(childAge-42.3819)     -0.470038
+
+Selected 6 of 7 terms, and 3 of 3 predictors
+Termination condition: RSq changed by less than 0.001 at 7 terms
+Importance: childAge, A_Index, childSex21
+Number of terms at each degree of interaction: 1 5 (additive model)
+GCV 40.29135    RSS 22007.66    GRSq 0.9194894    RSq 0.9223042
+
+MARS COMPORTAMENTO ADAPTATIVO
+Call: earth(formula=Rasch_CA_Dev~A_Index+childAge+childSex21, data=train[complete.cases(train[,c("Rasch_CA_Dev","A_In...))
+
+                    coefficients
+(Intercept)           104.063048
+childSex21             -1.390864
+h(25.6591-childAge)    -1.326435
+h(childAge-25.6591)     0.318610
+h(childAge-60.7146)    -0.279532
+
+Selected 5 of 5 terms, and 2 of 3 predictors
+Termination condition: RSq changed by less than 0.001 at 5 terms
+Importance: childAge, childSex21, A_Index-unused
+Number of terms at each degree of interaction: 1 4 (additive model)
+GCV 13.05888    RSS 6635.92    GRSq 0.9026405    RSq 0.9055851
